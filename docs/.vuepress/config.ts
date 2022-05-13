@@ -32,7 +32,7 @@ module.exports = {
   plugins: [
     ['@vuepress/back-to-top', true],
     ['@vuepress/medium-zoom', true],
-    ['vuepress-plugin-readmore', {
+    ['vuepress-plugin-readmore-popular', {
       blogId: '96641-5333172926158-056',
       name: '全栈技术驿站',
       keyword: 'Tech',
