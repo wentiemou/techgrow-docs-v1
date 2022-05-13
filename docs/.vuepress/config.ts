@@ -31,7 +31,17 @@ module.exports = {
   },
   plugins: [
     ['@vuepress/back-to-top', true],
-    ['@vuepress/medium-zoom', true]
+    ['@vuepress/medium-zoom', true],
+    ['vuepress-plugin-readmore', {
+      blogId: '96641-5333172926158-056',
+      name: '全栈技术驿站',
+      keyword: 'Tech',
+      qrcode: 'https://www.techgrow.cn/img/wx_mp_qr.png',
+      random: 0.9,
+      // lockToc: 'yes',
+      // selector: 'div.theme-default-content',
+      // libUrl: 'https://qiniu.techgrow.cn/js/readmore.js',
+    }]
   ],
   extraWatchFiles: [
     '.vuepress/configs/navbar/zh.ts',

@@ -39,6 +39,10 @@ module.exports = [
       {
         text: '联系方式',
         link: '/contact/'
+      },
+      {
+        text: '在线演示',
+        link: '/demo/'
       }
     ]
   }
