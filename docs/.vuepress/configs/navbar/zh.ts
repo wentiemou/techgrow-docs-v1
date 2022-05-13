@@ -37,12 +37,12 @@ module.exports = [
     text: '了解更多',
     items: [
       {
-        text: '联系方式',
-        link: '/contact/'
-      },
-      {
         text: '在线演示',
         link: '/demo/'
+      },
+      {
+        text: '联系方式',
+        link: '/contact/'
       }
     ]
   }
