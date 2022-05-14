@@ -44,7 +44,7 @@ $ npm install vuepress-plugin-readmore-popular --save
 ``` js
 module.exports = {
   plugins: [
-    ['vuepress-plugin-readmore', {
+    ['vuepress-plugin-readmore-popular', {
       // 已申请的博客 ID
       blogId: '18762-1609305354821-257',
       // 已申请的微信公众号名称
@@ -53,10 +53,10 @@ module.exports = {
       keyword: 'Tech',                    
       // 已申请的微信公众号二维码链接
       qrcode: 'https://www.techgrow.cn/img/wx_mp_qr.png',
-      // 文章内容选择器，一般需要根据不同类型的主题来设置
-      selector: 'div.theme-default-content'
+      // 文章内容选择器，若使用的不是官方默认主题，则需要根据第三方的主题来设置（可选）
+      selector: 'div.theme-default-content',
       // CDN 加速链接（可选）
-      libUrl: 'https://qiniu.techgrow.cn/js/readmore.js'
+      libUrl: 'https://qiniu.techgrow.cn/js/readmore.js',
       // 每篇文章随机添加微信公众号导流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加导流工具（可选）
       random: 1
     }]
