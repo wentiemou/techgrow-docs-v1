@@ -24,11 +24,11 @@ module.exports = [
     text: '开源插件',
     items: [
       {
-        text: 'Hexo 插件',
+        text: 'Hexo 导流插件',
         link: 'https://github.com/rqh656418510/hexo-readmore',
       },
       {
-        text: 'VuePress v1 插件',
+        text: 'VuePress v1 导流插件',
         link: 'https://github.com/rqh656418510/vuepress-plugin-readmore-popular',
       }
     ]
