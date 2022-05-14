@@ -59,8 +59,10 @@ module.exports = {
       qrcode: 'https://www.techgrow.cn/img/wx_mp_qr.png',
       // 文章内容的选择器，若使用的不是官方默认主题，则需要根据第三方的主题来设置（可选）
       selector: 'div.theme-default-content',
-      // CDN 加速链接（可选）
+      // 自定义的 JS 资源链接，可用于 CDN 加速（可选）
       libUrl: 'https://qiniu.techgrow.cn/js/readmore.js',
+      // 自定义的 CSS 资源链接，可用于适配不同风格的博客（可选）
+      cssUrl: 'https://qiniu.techgrow.cn/css/vuepress.css',
       // 每篇文章随机添加微信公众号导流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加导流工具（可选）
       random: 1
     }]
