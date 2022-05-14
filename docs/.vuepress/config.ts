@@ -43,7 +43,8 @@ module.exports = {
       random: 0.9,
       lockToc: 'yes',
       selector: 'div.theme-default-content',
-      libUrl: 'https://qiniu.techgrow.cn/js/readmore.js'
+      libUrl: 'https://qiniu.techgrow.cn/js/readmore.js',
+      cssUrl: 'https://qiniu.techgrow.cn/css/vuepress.css'
     }]
   ],
 
