@@ -1,4 +1,5 @@
 module.exports = {
+
   // 基础信息配置
   base: '/',
   lang: 'zh-CN',
@@ -29,6 +30,8 @@ module.exports = {
       }
     }
   },
+
+  // 插件配置
   plugins: [
     ['@vuepress/back-to-top', true],
     ['@vuepress/medium-zoom', true],
@@ -38,13 +41,15 @@ module.exports = {
       keyword: 'Tech',
       qrcode: 'https://www.techgrow.cn/img/wx_mp_qr.png',
       random: 0.9,
-      // lockToc: 'yes',
-      // selector: 'div.theme-default-content',
-      // libUrl: 'https://qiniu.techgrow.cn/js/readmore.js',
+      lockToc: 'yes',
+      selector: '.theme-default-content',
+      libUrl: 'https://qiniu.techgrow.cn/js/readmore.js'
     }]
   ],
+
+  // 监听配置
   extraWatchFiles: [
     '.vuepress/configs/navbar/zh.ts',
-    '.vuepress/configs/sidebar/zh.ts',
+    '.vuepress/configs/sidebar/zh.ts'
   ]
 }
