@@ -1,6 +1,6 @@
 module.exports = [
   {
-    text: '指南',
+    text: '首页',
     link: '/'
   },
   {
@@ -29,7 +29,7 @@ module.exports = [
       },
       {
         text: 'VuePress 插件',
-        link: 'https://github.com/rqh656418510/vuepress-readmore',
+        link: 'https://github.com/rqh656418510/vuepress-plugin-readmore-popular',
       }
     ]
   },
