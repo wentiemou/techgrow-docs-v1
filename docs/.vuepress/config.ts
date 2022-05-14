@@ -42,7 +42,7 @@ module.exports = {
       qrcode: 'https://www.techgrow.cn/img/wx_mp_qr.png',
       random: 0.9,
       lockToc: 'yes',
-      selector: '.theme-default-content',
+      selector: 'div.theme-default-content',
       libUrl: 'https://qiniu.techgrow.cn/js/readmore.js'
     }]
   ],

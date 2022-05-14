@@ -15,7 +15,7 @@ module.exports = [
         link: '/wechat/hexo/'
       },
       {
-        text: 'VuePress 博客',
+        text: 'VuePress v1 博客',
         link: '/wechat/vuepress/'
       }
     ]
@@ -28,7 +28,7 @@ module.exports = [
         link: 'https://github.com/rqh656418510/hexo-readmore',
       },
       {
-        text: 'VuePress 插件',
+        text: 'VuePress v1 插件',
         link: 'https://github.com/rqh656418510/vuepress-plugin-readmore-popular',
       }
     ]
