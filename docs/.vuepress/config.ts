@@ -37,7 +37,7 @@ module.exports = {
     ['@vuepress/medium-zoom', true],
     ['vuepress-plugin-readmore-popular', {
       // 已申请的博客 ID
-      blogId: '18762-1609305354821-257',
+      blogId: '96641-5333172926158-056',
       // 已申请的微信公众号名称
       name: '全栈技术驿站',
       // 已申请的微信公众号回复关键词
