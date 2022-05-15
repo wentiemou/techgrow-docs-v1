@@ -1,7 +1,7 @@
 module.exports = {
 
-  // 基础信息配置
-  base: '/',
+  // 基础配置
+  base: '/v1/',
   lang: 'zh-CN',
   title: 'TechGrow 开放平台',
   description: 'TechGrow 开放平台的官方中文文档',

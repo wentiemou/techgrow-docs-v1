@@ -40,3 +40,6 @@ yarn.lock
 dist
 .temp
 .cache
+
+### Shell
+shell/deploy.sh
