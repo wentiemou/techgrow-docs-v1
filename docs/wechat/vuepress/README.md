@@ -64,7 +64,9 @@ module.exports = {
       // 自定义的 CSS 资源链接，可用于适配不同风格的博客（可选）
       cssUrl: 'https://qiniu.techgrow.cn/readmore/dist/vuepress.css',
       // 每篇文章随机添加微信公众号导流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加导流工具（可选）
-      random: 1
+      random: 1,
+      // 排除添加导流工具的文章链接，格式为 ['/fontend/webpack/', '/backend/node/'] 这样的字符串数组（可选）
+      excludes: []
     }]
   ]
 }
