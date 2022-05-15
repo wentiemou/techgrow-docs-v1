@@ -63,9 +63,9 @@ module.exports = {
       libUrl: 'https://qiniu.techgrow.cn/readmore/dist/readmore.js',
       // 自定义的 CSS 资源链接，可用于适配不同风格的博客（可选）
       cssUrl: 'https://qiniu.techgrow.cn/readmore/dist/vuepress.css',
-      // 每篇文章随机添加微信公众号导流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加导流工具（可选）
+      // 每篇文章随机添加导流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加导流工具（可选）
       random: 1,
-      // 排除添加导流工具的文章链接，格式为 ['/fontend/webpack/', '/backend/node/'] 这样的字符串数组（可选）
+      // 排除添加导流工具的文章链接，格式为 ['/webpack', '/gulp/*', '/node/*/io']，支持使用路径、通配符、正则表达式的匹配规则（可选）
       excludes: []
     }]
   ]
@@ -81,6 +81,47 @@ module.exports = {
 点击 `阅读全文` 按钮，会弹出微信公众号的二维码窗口，如下图所示：
 
 ![](https://www.techgrow.cn/uploads/2022/02/28/77o3g5fhjovtu725vm8z42lemqt8zwli.png)
+
+## 取消阅读限制
+
+若希望关闭部分文章的微信公众号导流功能，可以使用插件的 `excludes` 参数来实现。值得一提的是，`excludes` 参数的值是一个数组，其中的数组元素可以是字符串或者正则表达式。
+
+- 根据 URL 路径，关闭某篇文章的导流功能
+
+``` js
+module.exports = {
+  plugins: [
+    ['vuepress-plugin-readmore-popular', {
+      excludes: ['/fontend/webpack']
+    }]
+  ]
+}
+```
+
+- 根据 URL 通配符，关闭某个目录下的所有文章的导流功能
+
+``` js
+module.exports = {
+  plugins: [
+    ['vuepress-plugin-readmore-popular', {
+      excludes: ['/fontend/*', '/backend/*/io']
+    }]
+  ]
+}
+```
+
+- 根据 URL 正则表达式，关闭符合规则的所有文章的导流功能
+
+
+``` js
+module.exports = {
+  plugins: [
+    ['vuepress-plugin-readmore-popular', {
+      excludes: [/\/fontend\/.+?\/note/]
+    }]
+  ]
+}
+```
 
 ## 在线演示
 
