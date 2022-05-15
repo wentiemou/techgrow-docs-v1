@@ -50,10 +50,10 @@ module.exports = {
       libUrl: 'https://qiniu.techgrow.cn/readmore/dist/readmore.js',
       // 自定义的 CSS 资源链接，可用于适配不同风格的博客（可选）
       cssUrl: 'https://qiniu.techgrow.cn/readmore/dist/vuepress.css',
-      // 每篇文章随机添加微信公众号导流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加导流工具（可选）
+      // 每篇文章随机添加导流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加导流工具（可选）
       random: 1,
-       // 排除添加导流工具的文章链接（可选）
-      excludes: ['/v1/', '/v1/wechat/common/', '/v1/wechat/hexo/', '/v1/wechat/vuepress/', '/v1/contact/']
+      // 排除添加导流工具的文章链接，格式为 ['/webpack', '/gulp/*', '/node/*/io']，支持使用路径、通配符、正则表达式的匹配规则（可选）
+      excludes: ['/v1', '/v1/wechat/*', '/v1/contact/']
     }]
   ],
 
