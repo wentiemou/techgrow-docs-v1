@@ -3,8 +3,8 @@ module.exports = {
   // 基础配置
   base: '/v1/',
   lang: 'zh-CN',
-  title: 'TechGrow 开放平台',
-  description: 'TechGrow 开放平台的官方中文文档',
+  title: 'TechGrow 开放平台 V1',
+  description: 'TechGrow 开放平台的官方中文文档 V1',
   head: [
     ['meta', { name: 'application-name', content: 'TechGrow 开放平台' }],
     ['meta', { name: 'apple-mobile-web-app-title', content: 'TechGrow 开放平台' }],

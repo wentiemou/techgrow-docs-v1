@@ -11,6 +11,13 @@ VuePress v1 博客建议安装 [vuepress-plugin-readmore-popular](https://github
 `vuepress-plugin-readmore-popular` 只支持 VuePress v1，暂时不支持 VuePress v2。
 :::
 
+## 特色功能
+
+- 支持随机为博客添加导流功能
+- 支持关闭某篇文章的导流功能
+- 支持查询用户解锁文章的历史记录
+- 支持自定义 CSS 样式，轻松适配不同风格的博客
+
 ## 注册博客
 
 浏览器访问 [TechGrow](https://open.techgrow.cn) 的官网 ，注册并登录账号后，进入博客的后台管理页面。首先点击左侧的菜单 `博客注册`，然后点击 `新增` 按钮，添加自己博客的信息。博客注册成功后，记录下 `博客 ID`，后面的步骤会使用到
@@ -122,6 +129,15 @@ module.exports = {
   ]
 }
 ```
+
+## 自定义样式
+
+插件默认使用了定义在 [vuepress.css](https://qiniu.techgrow.cn/readmore/dist/vuepress.css) 的 CSS 样式，你可以使用以下两种方式自定义自己的样式：
+
+- 第一种方式：更改博客主题的 CSS 源码文件，将自定义的 CSS 样式添加到里面
+- 第二种方式：创建独立的 CSS 文件，并将其存放在自己的博客里，同时通过插件的 `cssUrl` 配置参数来指定其访问的 URL 路径
+
+> 提示：为了方便日后维护，强烈建议使用第二种方式来添加自定义样式
 
 ## 在线演示
 

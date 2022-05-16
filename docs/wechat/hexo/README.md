@@ -7,6 +7,14 @@ description: Hexo 博客导流微信公众号
 
 Hexo 博客建议安装 [hexo-readmore](https://github.com/rqh656418510/hexo-readmore) 插件，将 [TechGrow](https://open.techgrow.cn) 的免费微信公众号导流工具整合到博客中，用户扫码关注微信公众号后可以解锁全站文章，让微信公众号的粉丝数躺着增长。
 
+## 特色功能
+
+- 已兼容主流的 Hexo 主题
+- 支持关闭某篇文章的导流功能
+- 支持随机为博客添加导流功能
+- 支持查询用户解锁文章的历史记录
+- 支持自定义 CSS 样式，轻松适配不同风格的博客
+
 ## 注册博客
 
 浏览器访问 [TechGrow](https://open.techgrow.cn) 的官网 ，注册并登录账号后，进入博客的后台管理页面。首先点击左侧的菜单 `博客注册`，然后点击 `新增` 按钮，添加自己博客的信息。博客注册成功后，记录下 `博客 ID`，后面的步骤会使用到
@@ -99,6 +107,24 @@ date: 2022-01-12 22:25:49
 updated: 2022-01-12 22:25:49
 ---
 ```
+
+## 自定义样式
+
+插件默认使用了定义在 [hexo.css](https://qiniu.techgrow.cn/readmore/dist/hexo.css) 的 CSS 样式，你可以使用以下两种方式自定义自己的样式：
+
+- 第一种方式：更改博客主题的 CSS 源码文件，将自定义的 CSS 样式添加到里面
+- 第二种方式：创建独立的 CSS 文件，并将其存放在自己的博客里，同时通过插件的 `cssUrl` 配置参数来指定其访问的 URL 路径
+
+> 提示：为了方便日后维护，强烈建议使用第二种方式来添加自定义样式
+
+## 已兼容的主题
+
+- [NexT](https://github.com/next-theme/hexo-theme-next)
+- [Yilia](https://github.com/litten/hexo-theme-yilia)
+- [Icarus](https://github.com/ppoffice/hexo-theme-icarus)
+- [Matery](https://github.com/blinkfox/hexo-theme-matery)
+- [Fluid](https://github.com/fluid-dev/hexo-theme-fluid)
+- [Stun](https://github.com/liuyib/hexo-theme-stun)
 
 ## 在线演示
 
