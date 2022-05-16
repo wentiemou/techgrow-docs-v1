@@ -11,16 +11,16 @@
 
 # 读取INI配置文件
 function __readINI() {
-	INIFILE=$1; SECTION=$2; ITEM=$3
-	_iniContent=`awk -F '=' '/['$SECTION']/{a=1}a==1&&$1~/'$ITEM'/{print $2;exit}' $INIFILE`
-	echo $_iniContent
+ 	INIFILE=$1; SECTION=$2; ITEM=$3
+ 	_readContent=`awk -F '=' '/\['$SECTION'\]/{a=1}a==1&&$1~/'$ITEM'/{print $2;exit}' $INIFILE`
+	echo ${_readContent}
 }
 
 # 初始化连接参数
-_HOST=( $( __readINI /etc/rsyncd.ini vuepress1 host ) )
-_USER=( $( __readINI /etc/rsyncd.ini vuepress1 user ) )
-_MODULE=( $( __readINI /etc/rsyncd.ini vuepress1 module ) )
-_PASSWORD_FILE=( $( __readINI /etc/rsyncd.ini vuepress1 password_file ) )
+_HOST=( $( __readINI /etc/rsyncd.ini Vuepress1 host ) )
+_USER=( $( __readINI /etc/rsyncd.ini Vuepress1 user ) )
+_MODULE=( $( __readINI /etc/rsyncd.ini Vuepress1 module ) )
+_PASSWORD_FILE=( $( __readINI /etc/rsyncd.ini Vuepress1 password_file ) )
 
 # 源目录
 _DIST_DIR='../docs/.vuepress/dist/'
