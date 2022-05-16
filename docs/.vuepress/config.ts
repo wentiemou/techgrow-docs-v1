@@ -34,7 +34,7 @@ module.exports = {
   // 插件配置
   plugins: [
     ['@vuepress/back-to-top', true],
-    ['@vuepress/medium-zoom', true],
+    ['vuepress-plugin-medium-zoom', true],
     ['vuepress-plugin-readmore-popular', {
       // 已申请的博客 ID
       blogId: '96641-5333172926158-056',
