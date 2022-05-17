@@ -91,7 +91,7 @@ description: 博客导流微信公众号
 ![](https://www.techgrow.cn/uploads/2022/02/28/ad963a38752743169e8f351983cc6cc1.png)
 
 ::: tip 提示
-- `https://qiniu.techgrow.cn/readmore/dist/vuepress.css` 可以是自定义的 CSS 资源链接，一般用于适配不同风格的博客
+- `https://qiniu.techgrow.cn/readmore/dist/readmore.css` 可以是自定义的 CSS 资源链接，一般用于适配不同风格的博客
 :::
 
 - 参数说明
