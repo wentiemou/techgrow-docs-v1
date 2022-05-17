@@ -52,7 +52,7 @@ module.exports = {
       cssUrl: 'https://qiniu.techgrow.cn/readmore/dist/vuepress.css',
       // 文章排除添加导流工具的URL规则，支持使用路径、通配符、正则表达式的匹配规则
       excludes: { strExp: ['/v1', '/v1/wechat/*', '/v1/contact/'], regExp: ['^(?!\/v1).*'] },
-      // 是否反转文章排除规则的配置，即只有符合排除规则的文章才会添加导流工具
+      // 是否反转URL排除规则的配置，即只有符合排除规则的文章才会添加导流工具
       reverse: false,
       // 每篇文章随机添加导流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加导流工具
       random: 1

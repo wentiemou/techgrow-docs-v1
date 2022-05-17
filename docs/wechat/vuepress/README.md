@@ -72,7 +72,7 @@ module.exports = {
       cssUrl: 'https://qiniu.techgrow.cn/readmore/dist/vuepress.css',
       // 文章排除添加导流工具的URL规则，支持使用路径、通配符、正则表达式的匹配规则
       excludes: { strExp: [], regExp: [] },
-      // 是否反转排除规则的配置，即只有符合排除规则的文章才会添加导流工具
+      // 是否反转URL排除规则的配置，即只有符合排除规则的文章才会添加导流工具
       reverse: false,
       // 每篇文章随机添加导流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加导流工具
       random: 1
@@ -166,15 +166,15 @@ module.exports = {
 ::: tip 提示
 - 1. 文章 URL 优先匹配 `strExp` 规则，然后再匹配 `regExp` 规则
 - 2. 文章 URL 一旦满足 `strExp` 规则，则不会再匹配 `regExp` 规则
-- 3. 如果希望符合规则的文章才添加导流工具，则可以使用 `reverse : true` 配置参数实现
+- 3. 如果希望符合 URL 排除规则的文章才添加导流工具，则可以使用 `reverse : true` 配置参数实现
 :::
 
 ## 自定义样式
 
 插件默认使用了定义在 [vuepress.css](https://qiniu.techgrow.cn/readmore/dist/vuepress.css) 的 CSS 样式，你可以使用以下两种方式自定义自己的样式：
 
-- 第一种方式：更改博客主题的 CSS 源码文件，将自定义的 CSS 样式添加到里面
-- 第二种方式：创建独立的 CSS 文件，并将其存放在自己的博客里，同时通过插件的 `cssUrl` 配置参数来指定其访问的 URL 路径
+- 第一种方式：更改博客主题的 CSS 源码文件，将自定义的那部分 CSS 样式添加到里面
+- 第二种方式：根据 [vuepress.css](https://qiniu.techgrow.cn/readmore/dist/vuepress.css) 创建自己的 CSS 文件（完整的），并将其存放在自己的博客里，同时通过插件的 `cssUrl` 配置参数来指定其访问的 URL 路径
 
 > 提示：为了方便日后维护，强烈建议使用第二种方式来添加自定义样式
 
