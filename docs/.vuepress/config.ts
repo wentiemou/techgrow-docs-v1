@@ -39,8 +39,9 @@ module.exports = {
       ignoreLocal: true,
       hm: '43c937a5b15d4206e725c4d25d1168d2'
     }],
-    ['@mr-hope/vuepress-plugin-sitemap', {
-      'hostname': 'https://docs.techgrow.cn'
+    ['sitemap', {
+      hostname: 'https://docs.techgrow.cn',
+      exclude: ['/404.html']
     }],
     ['vuepress-plugin-readmore-popular', {
       // 已申请的博客 ID
