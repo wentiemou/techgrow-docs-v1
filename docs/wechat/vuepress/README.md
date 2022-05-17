@@ -45,7 +45,7 @@ vuepress-plugin-readmore-popular 插件只支持 VuePress v1.x，暂时不支持
 - 运行 `npm install` 命令安装插件到本地博客
 
 ``` sh
-$ npm install vuepress-plugin-readmore-popular --save
+$ npm install -D vuepress-plugin-readmore-popular
 ```
 
 ## 配置 VuePress
