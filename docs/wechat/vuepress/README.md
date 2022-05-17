@@ -1,14 +1,14 @@
 ---
-title: VuePress v1 博客
-description: VuePress v1 博客导流微信公众号
+title: VuePress v1.x 博客
+description: VuePress v1.x 博客导流微信公众号
 ---
 
 ## 前言
 
-VuePress v1 博客建议安装 [vuepress-plugin-readmore-popular](https://github.com/rqh656418510/vuepress-plugin-readmore-popular) 插件，将 [TechGrow](https://open.techgrow.cn) 的免费微信公众号导流工具整合到博客中，用户扫码关注微信公众号后可以解锁全站文章，让微信公众号的粉丝数躺着增长。
+VuePress v1.x 博客建议安装 [vuepress-plugin-readmore-popular](https://github.com/rqh656418510/vuepress-plugin-readmore-popular) 插件，将 [TechGrow](https://open.techgrow.cn) 的免费微信公众号导流工具整合到博客中，用户扫码关注微信公众号后可以解锁全站文章，让微信公众号的粉丝数躺着增长。
 
 ::: tip 提示
-vuepress-plugin-readmore-popular 插件只支持 VuePress v1，暂时不支持 VuePress v2。
+vuepress-plugin-readmore-popular 插件只支持 VuePress v1.x，暂时不支持 VuePress v2.x。
 :::
 
 ## 特色功能

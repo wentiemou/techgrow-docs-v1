@@ -35,6 +35,9 @@ module.exports = {
   plugins: [
     ['@vuepress/back-to-top', true],
     ['vuepress-plugin-medium-zoom', true],
+    ['@mr-hope/vuepress-plugin-sitemap', {
+      'hostname': 'https://docs.techgrow.cn'
+    }],
     ['vuepress-plugin-readmore-popular', {
       // 已申请的博客 ID
       blogId: '96641-5333172926158-056',

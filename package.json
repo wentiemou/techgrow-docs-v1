@@ -8,6 +8,7 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
+    "@mr-hope/vuepress-plugin-sitemap": "^1.28.5",
     "@vuepress/plugin-back-to-top": "^1.9.7",
     "@vuepress/theme-vue": "^1.9.7",
     "vue-toasted": "^1.1.25",
