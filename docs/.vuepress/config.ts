@@ -35,6 +35,10 @@ module.exports = {
   plugins: [
     ['@vuepress/back-to-top', true],
     ['vuepress-plugin-medium-zoom', true],
+    ['vuepress-plugin-baidu-seo', {
+      ignoreLocal: true,
+      hm: '43c937a5b15d4206e725c4d25d1168d2'
+    }],
     ['@mr-hope/vuepress-plugin-sitemap', {
       'hostname': 'https://docs.techgrow.cn'
     }],
