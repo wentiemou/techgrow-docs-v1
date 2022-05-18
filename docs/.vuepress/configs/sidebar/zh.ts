@@ -1,8 +1,8 @@
 module.exports = {
-    '/demo/': getWechatSidebar('在线演示导流'),
-    '/wechat/hexo/': getWechatSidebar('公众号导流'),
-    '/wechat/common/': getWechatSidebar('公众号导流'),
-    '/wechat/vuepress/': getWechatSidebar('公众号导流')
+    '/demo/': getWechatSidebar('在线演示引流'),
+    '/wechat/hexo/': getWechatSidebar('公众号引流'),
+    '/wechat/common/': getWechatSidebar('公众号引流'),
+    '/wechat/vuepress/': getWechatSidebar('公众号引流')
 }
 
 function getWechatSidebar(group) {

@@ -4,7 +4,7 @@ module.exports = {
   base: '/v1/',
   lang: 'zh-CN',
   title: 'TechGrow 开放平台 V1',
-  description: 'TechGrow 开放平台的官方中文文档 V1',
+  description: '专注于自媒体引流的开放平台，支持公众号、百家号、头条号、抖音号等自媒体平台的引流。',
   head: [
     ['meta', { name: 'application-name', content: 'TechGrow 开放平台' }],
     ['meta', { name: 'apple-mobile-web-app-title', content: 'TechGrow 开放平台' }],
@@ -58,11 +58,11 @@ module.exports = {
       libUrl: 'https://qiniu.techgrow.cn/readmore/dist/readmore.js',
       // 自定义的 CSS 资源链接，可用于适配不同风格的博客
       cssUrl: 'https://qiniu.techgrow.cn/readmore/dist/vuepress.css',
-      // 文章排除添加导流工具的URL规则，支持使用路径、通配符、正则表达式的匹配规则
+      // 文章排除添加引流工具的URL规则，支持使用路径、通配符、正则表达式的匹配规则
       excludes: { strExp: [], regExp: ['^(?!\/v1/demo).*'] },
-      // 是否反转URL排除规则的配置，即只有符合排除规则的文章才会添加导流工具
+      // 是否反转URL排除规则的配置，即只有符合排除规则的文章才会添加引流工具
       reverse: false,
-      // 每篇文章随机添加导流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加导流工具
+      // 每篇文章随机添加引流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加引流工具
       random: 1
     }]
   ],

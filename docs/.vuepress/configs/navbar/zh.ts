@@ -4,7 +4,7 @@ module.exports = [
     link: '/'
   },
   {
-    text: '公众号导流',
+    text: '公众号引流',
     items: [
       {
         text: '主流博客',
@@ -24,11 +24,11 @@ module.exports = [
     text: '开源插件',
     items: [
       {
-        text: 'Hexo 导流插件',
+        text: 'Hexo 引流插件',
         link: 'https://github.com/rqh656418510/hexo-readmore',
       },
       {
-        text: 'VuePress v1.x 导流插件',
+        text: 'VuePress v1.x 引流插件',
         link: 'https://github.com/rqh656418510/vuepress-plugin-readmore-popular',
       }
     ]

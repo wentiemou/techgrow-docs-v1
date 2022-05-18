@@ -1,11 +1,11 @@
 ---
 title: VuePress v1.x 博客
-description: VuePress v1.x 博客导流微信公众号
+description: VuePress v1.x 博客引流微信公众号
 ---
 
 ## 前言
 
-VuePress v1.x 博客建议安装 [vuepress-plugin-readmore-popular](https://github.com/rqh656418510/vuepress-plugin-readmore-popular) 插件，将 [TechGrow](https://open.techgrow.cn) 的免费微信公众号导流工具整合到博客中，用户扫码关注微信公众号后可以解锁全站文章，让微信公众号的粉丝数躺着增长。
+VuePress v1.x 博客建议安装 [vuepress-plugin-readmore-popular](https://github.com/rqh656418510/vuepress-plugin-readmore-popular) 插件，将 [TechGrow](https://open.techgrow.cn) 的免费微信公众号引流工具整合到博客中，用户扫码关注微信公众号后可以解锁全站文章，让微信公众号的粉丝数躺着增长。
 
 ::: tip 提示
 vuepress-plugin-readmore-popular 插件只支持 VuePress v1.x，暂时不支持 VuePress v2.x。
@@ -13,8 +13,8 @@ vuepress-plugin-readmore-popular 插件只支持 VuePress v1.x，暂时不支持
 
 ## 特色功能
 
-- 支持随机为博客添加导流功能
-- 支持关闭某篇文章的导流功能
+- 支持随机为博客添加引流功能
+- 支持关闭某篇文章的引流功能
 - 支持查询用户解锁文章的历史记录
 - 支持自定义 CSS 样式，轻松适配不同风格的博客
 
@@ -70,11 +70,11 @@ module.exports = {
       libUrl: 'https://qiniu.techgrow.cn/readmore/dist/readmore.js',
       // 自定义的 CSS 资源链接，可用于适配不同风格的博客
       cssUrl: 'https://qiniu.techgrow.cn/readmore/dist/vuepress.css',
-      // 文章排除添加导流工具的URL规则，支持使用路径、通配符、正则表达式的匹配规则
+      // 文章排除添加引流工具的URL规则，支持使用路径、通配符、正则表达式的匹配规则
       excludes: { strExp: [], regExp: [] },
-      // 是否反转URL排除规则的配置，即只有符合排除规则的文章才会添加导流工具
+      // 是否反转URL排除规则的配置，即只有符合排除规则的文章才会添加引流工具
       reverse: false,
-      // 每篇文章随机添加导流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加导流工具
+      // 每篇文章随机添加引流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加引流工具
       random: 1
     }]
   ]
@@ -98,7 +98,7 @@ module.exports = {
 
 ## 验证插件效果
 
-打开文章页面，若文章自动隐藏了部分内容，并且出现了 `阅读全文` 按钮，则说明导流插件正常运行，如下图所示：
+打开文章页面，若文章自动隐藏了部分内容，并且出现了 `阅读全文` 按钮，则说明引流插件正常运行，如下图所示：
 
 ![](https://www.techgrow.cn/uploads/2022/02/28/g7v4su56sx5g95qipmzh0k1hknj6fsa7.png)
 
@@ -108,9 +108,9 @@ module.exports = {
 
 ## 取消阅读限制
 
-若希望关闭部分文章的微信公众号导流功能，可以使用插件的 `excludes` 参数来实现。值得一提的是，`excludes` 的参数值是一个 JSON 对象，其中的 `strExp` 属性是路径和通配符规则的字符串数组，而 `regExp` 属性是正则表达式的字符串数组。
+若希望关闭部分文章的微信公众号引流功能，可以使用插件的 `excludes` 参数来实现。值得一提的是，`excludes` 的参数值是一个 JSON 对象，其中的 `strExp` 属性是路径和通配符规则的字符串数组，而 `regExp` 属性是正则表达式的字符串数组。
 
-- 根据 URL 路径，关闭某篇文章的导流功能
+- 根据 URL 路径，关闭某篇文章的引流功能
 
 ``` js
 module.exports = {
@@ -123,7 +123,7 @@ module.exports = {
 }
 ```
 
-- 根据 URL 通配符，关闭某个目录下的所有文章的导流功能
+- 根据 URL 通配符，关闭某个目录下的所有文章的引流功能
 
 ``` js
 module.exports = {
@@ -137,7 +137,7 @@ module.exports = {
 }
 ```
 
-- 根据 URL 正则表达式，关闭符合规则的所有文章的导流功能
+- 根据 URL 正则表达式，关闭符合规则的所有文章的引流功能
 
 
 ``` js
@@ -166,7 +166,7 @@ module.exports = {
 ::: tip 提示
 - 1. 文章 URL 优先匹配 `strExp` 规则，然后再匹配 `regExp` 规则
 - 2. 文章 URL 一旦满足 `strExp` 规则，则不会再匹配 `regExp` 规则
-- 3. 如果希望符合 URL 排除规则的文章才添加导流工具，则可以使用 `reverse : true` 配置参数实现
+- 3. 如果希望符合 URL 排除规则的文章才添加引流工具，则可以使用 `reverse : true` 配置参数实现
 :::
 
 ## 自定义样式
