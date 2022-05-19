@@ -57,7 +57,7 @@ module.exports = {
       // 自定义的 JS 资源链接，可用于 CDN 加速
       libUrl: 'https://qiniu.techgrow.cn/readmore/dist/readmore.js',
       // 自定义的 CSS 资源链接，可用于适配不同风格的博客
-      cssUrl: 'https://qiniu.techgrow.cn/readmore/dist/vuepress.css',
+      cssUrl: '/css/vuepress.css',
       // 文章排除添加引流工具的URL规则，支持使用路径、通配符、正则表达式的匹配规则
       excludes: { strExp: [], regExp: ['^(?!\/v1/demo).*'] },
       // 是否反转URL排除规则的配置，即只有符合排除规则的文章才会添加引流工具
