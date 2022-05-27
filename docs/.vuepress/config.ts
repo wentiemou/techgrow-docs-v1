@@ -3,7 +3,7 @@ module.exports = {
   // 基础配置
   base: '/v1/',
   lang: 'zh-CN',
-  title: 'TechGrow 开放平台 V1',
+  title: 'TechGrow 开放平台',
   description: '专注于自媒体引流的免费开放平台，支持公众号、百家号、头条号、抖音号等自媒体平台的引流。',
   head: [
     ['meta', { name: 'application-name', content: 'TechGrow 开放平台' }],

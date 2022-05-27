@@ -37,6 +37,10 @@ module.exports = [
     text: '了解更多',
     items: [
       {
+        text: '开放平台',
+        link: 'https://open.techgrow.cn/'
+      },
+      {
         text: '在线演示',
         link: '/demo/'
       },
