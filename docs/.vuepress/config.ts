@@ -34,6 +34,7 @@ module.exports = {
   // 插件配置
   plugins: [
     ['@vuepress/back-to-top', true],
+    ['vuepress-plugin-code-copy', true],
     ['vuepress-plugin-medium-zoom', true],
     ['vuepress-plugin-baidu-seo', {
       ignoreLocal: true,
