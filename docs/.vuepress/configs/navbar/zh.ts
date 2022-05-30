@@ -1,10 +1,10 @@
 module.exports = [
   {
-    text: '首页',
+    text: '公众号引流',
     link: '/'
   },
   {
-    text: '公众号引流',
+    text: '博客平台',
     items: [
       {
         text: '主流博客',
@@ -37,16 +37,16 @@ module.exports = [
     text: '了解更多',
     items: [
       {
-        text: '开放平台',
-        link: 'https://open.techgrow.cn/'
-      },
-      {
         text: '在线演示',
         link: '/demo/'
       },
       {
         text: '联系方式',
         link: '/contact/'
+      },
+      {
+        text: '官方网站',
+        link: 'https://open.techgrow.cn/'
       }
     ]
   }
