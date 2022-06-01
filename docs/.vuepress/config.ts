@@ -54,7 +54,7 @@ module.exports = {
       // 已申请的微信公众号二维码链接
       qrcode: 'https://www.techgrow.cn/img/wx_mp_qr.png',
       // 文章内容的选择器，若使用的不是官方默认主题，则需要根据第三方的主题来设置
-      selector: 'div.theme-default-content',
+      selector: 'div.theme-default-contents',
       // 自定义的 JS 资源链接，可用于 CDN 加速
       libUrl: 'https://qiniu.techgrow.cn/readmore/dist/readmore.js',
       // 自定义的 CSS 资源链接，可用于适配不同风格的博客

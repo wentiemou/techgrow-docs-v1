@@ -64,15 +64,15 @@ module.exports = {
       keyword: 'Tech',                    
       // 已申请的微信公众号二维码链接
       qrcode: 'https://www.techgrow.cn/img/wx_mp_qr.png',
-      // 文章内容的选择器，若使用的不是官方默认主题，则需要根据第三方的主题来设置
+      // 文章内容的 JS 选择器，若使用的不是官方默认主题，则需要根据第三方的主题来设置
       selector: 'div.theme-default-content',
       // 自定义的 JS 资源链接，可用于 CDN 加速
       libUrl: 'https://qiniu.techgrow.cn/readmore/dist/readmore.js',
       // 自定义的 CSS 资源链接，可用于适配不同风格的博客
       cssUrl: 'https://qiniu.techgrow.cn/readmore/dist/vuepress.css',
-      // 文章排除添加引流工具的URL规则，支持使用路径、通配符、正则表达式的匹配规则
+      // 文章排除添加引流工具的 URL 规则，支持使用路径、通配符、正则表达式的匹配规则
       excludes: { strExp: [], regExp: [] },
-      // 是否反转URL排除规则的配置，即只有符合排除规则的文章才会添加引流工具
+      // 是否反转 URL 排除规则的配置，即只有符合排除规则的文章才会添加引流工具
       reverse: false,
       // 每篇文章随机添加引流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加引流工具
       random: 1
@@ -95,6 +95,19 @@ module.exports = {
 | excludes | Json Object | 否   | `{ strExp: [ ], regExp: [ ] }`                       | -    |
 | reverse  | Boolean     | 否   | `false`                                              | -    |
 | random   | Number      | 否   | 1                                                    | -    |
+
+`selector` 参数的作用是指定 JS 选择器来获取文章的主体内容，若 VuePress 使用了第三方主题，则一般需要根据第三方主题来配置该参数。其中 VuePress 不同主题的配置示例如下：
+
+| 主题                                                                                              | 插件配置                                | 备注         |
+| ------------------------------------------------------------------------------------------------- | --------------------------------------- | ------------ |
+| [@vuepress/theme-vue](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/theme-vue) | `selector: 'div.theme-default-content'` | 官方默认主题 |
+| [vuepress-theme-reco](https://github.com/vuepress-reco/vuepress-theme-reco-1.x)                   | `selector: 'div.theme-reco-content'`    | 第三方主题   |
+
+::: tip 提示
+若不知道如何指定 JS 选择器，则可以打开博客的任意一篇文章，利用 Chrome 等浏览器的元素审查功能，找到文章页面中文章主体的 `div` 标签，最后定位得到 `div` 标签的 CSS 类即可（例如 `theme-default-content`），如下图所示。
+:::
+
+![](https://www.techgrow.cn/uploads/2022/02/28/tgG7u5vltLzQryYooEv6f4fyFlNVSp8T.png)
 
 ## 验证插件效果
 
@@ -184,22 +197,23 @@ module.exports = {
 VuePress 安装插件后，引流工具无法生效。
 :::
 
-若引流工具无法生效，此时需要留意 VuePress 使用的是不是第三方主题。一旦使用了第三方主题，则需要根据第三方主题来配置插件的 `selector` 参数，该参数的作用是指定 JS 选择器来获取文章的主体内容。其中 VuePress 不同主题的配置示例如下：
+若引流工具无法生效，此时需要留意 VuePress 使用的是不是第三方主题。在使用第三方主题的情况下，一般需要根据第三方主题来配置插件的 `selector` 参数，该参数的作用是指定 JS 选择器来获取文章的主体内容，详细说明请看[这里](/wechat/vuepress/#插件参数说明)。
 
-| 主题                                                                                              | 插件配置                                | 备注         |
-| ------------------------------------------------------------------------------------------------- | --------------------------------------- | ------------ |
-| [@vuepress/theme-vue](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/theme-vue) | `selector: 'div.theme-default-content'` | 官方默认主题 |
-| [vuepress-theme-reco](https://github.com/vuepress-reco/vuepress-theme-reco-1.x)                   | `selector: 'div.theme-reco-content'`    | 第三方主题   |
-
-> 值得一提的是，若由于 `selector` 参数配置不正确导致引流工具无效，那么引流工具会在浏览器的控制台输出如下的警告信息
+> 值得一提的是，若由于 `selector` 参数配置不正确导致引流工具无效，那么引流工具会在浏览器的控制台输出如下的警告信息：
 
 ![](https://www.techgrow.cn/uploads/2022/02/28/8i4J9HpUUelLo43KLdHphgMHIFQwleNg.png)
 
 ::: tip 问题二
-VuePress 安装插件后，浏览器访问的时候输出警告或者错误信息，且引流工具无法生效
+VuePress 安装插件后，浏览器的控制台输出警告或者错误信息，且引流工具无法生效
 :::
 
-浏览器访问 VuePress 博客后，按下 `F12` 快捷键调出调试工具，然后切换到 `控制台`，最后将警告或者错误信息截图并发到 [官方微信群](https://www.techgrow.cn/img/wx-group-qr-techgrow.png) 或者 `656418510@qq.com` 邮箱，建议留言备注 VuePress 与 VuePress 主题的版本。
+浏览器访问 VuePress 博客后，按下 `F12` 快捷键调出调试工具，然后切换到 `控制台`，最后将警告或者错误信息截图，并发送到 [官方微信群](https://www.techgrow.cn/img/wx-group-qr-techgrow.png) 或者 `656418510@qq.com` 邮箱，建议留言备注 VuePress 与 VuePress 主题的版本号。
+
+::: tip 问题三
+VuePress 安装插件后，移动端的引流工具无法生效，而 PC 端却生效
+:::
+
+考虑到用户体验的问题，在移动端默认是关闭引流功能的，请知悉。
 
 ## 在线演示
 
