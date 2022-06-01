@@ -191,7 +191,7 @@ VuePress 安装插件后，引流工具无法生效。
 | @vuepress/theme-vue | `selector: 'div.theme-default-content'` | 默认主题   |
 | vuepress-theme-reco | `selector: 'div.theme-reco-content'`    | 第三方主题 |
 
-值得一提的是，若由于 `selector` 参数配置不正确导致引流工具无效，那么引流工具会在浏览器的控制台输出如下的警告信息：
+> 值得一提的是，若由于 `selector` 参数配置不正确导致引流工具无效，那么引流工具会在浏览器的控制台输出如下的警告信息
 
 ![](https://www.techgrow.cn/uploads/2022/02/28/8i4J9HpUUelLo43KLdHphgMHIFQwleNg.png)
 
