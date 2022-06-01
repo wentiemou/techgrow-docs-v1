@@ -1,14 +1,14 @@
 ---
-title: VuePress v1.x 博客
-description: VuePress v1.x 博客引流微信公众号
+title: VuePress 博客
+description: VuePress 博客引流微信公众号
 ---
 
 ## 前言
 
-VuePress v1.x 博客建议安装 [vuepress-plugin-readmore-popular](https://github.com/rqh656418510/vuepress-plugin-readmore-popular) 插件，将 [TechGrow](https://open.techgrow.cn) 的免费微信公众号引流工具整合到博客中，用户扫码关注微信公众号后可以解锁全站文章，让微信公众号的粉丝数躺着增长。
+VuePress 博客建议安装 [vuepress-plugin-readmore-popular](https://github.com/rqh656418510/vuepress-plugin-readmore-popular) 插件，将 [TechGrow](https://open.techgrow.cn) 的免费微信公众号引流工具整合到博客中，用户扫码关注微信公众号后可以解锁全站文章，让微信公众号的粉丝数躺着增长。
 
-::: tip 提示
-vuepress-plugin-readmore-popular 插件只支持 VuePress v1.x，暂时不支持 VuePress v2.x。
+::: tip 兼容性
+vuepress-plugin-readmore-popular 插件目前只支持 VuePress v1.x，暂时不支持 VuePress v2.x。
 :::
 
 ## 特色功能
@@ -89,11 +89,11 @@ module.exports = {
 | name     | String      | 是   | 无                                                   | -    |
 | keyword  | String      | 是   | 无                                                   | -    |
 | qrcode   | String      | 是   | 无                                                   | -    |
-| selector | String      | 否   | div.theme-default-content                            | -    |
+| selector | String      | 否   | `div.theme-default-content`                          | -    |
 | libUrl   | String      | 否   | https://qiniu.techgrow.cn/readmore/dist/readmore.js  | -    |
 | cssUrl   | String      | 否   | https://qiniu.techgrow.cn/readmore/dist/vuepress.css | -    |
-| excludes | Json Object | 否   | { strExp: [ ], regExp: [ ] }                         | -    |
-| reverse  | Boolean     | 否   | false                                                | -    |
+| excludes | Json Object | 否   | `{ strExp: [ ], regExp: [ ] }`                       | -    |
+| reverse  | Boolean     | 否   | `false`                                              | -    |
 | random   | Number      | 否   | 1                                                    | -    |
 
 ## 验证插件效果
@@ -184,14 +184,14 @@ module.exports = {
 VuePress 安装插件后，引流工具无法生效。
 :::
 
-若引流工具无法生效，此时需要留意 VuePress 使用的是不是第三方主题。一旦使用了第三方主题，则需要根据第三方主题来配置插件的 `selector` 参数，该参数的作用是指定选择器来获取文章的主体内容。VuePress 不同主题的配置示例如下：
+若引流工具无法生效，此时需要留意 VuePress 使用的是不是第三方主题。一旦使用了第三方主题，则需要根据第三方主题来配置插件的 `selector` 参数，该参数的作用是指定选择器来获取文章的主体内容。其中 VuePress 不同主题的配置示例如下：
 
 | 主题                | 插件配置                                | 备注       |
 | ------------------- | --------------------------------------- | ---------- |
 | @vuepress/theme-vue | `selector: 'div.theme-default-content'` | 默认主题   |
 | vuepress-theme-reco | `selector: 'div.theme-reco-content'`    | 第三方主题 |
 
-值得一提的是，若由于 `selector` 参数配置不正确导致引流工具无效，那么浏览器会在控制台输出如下的警告信息：
+值得一提的是，若由于 `selector` 参数配置不正确导致引流工具无效，那么引流工具会在浏览器的控制台输出如下的警告信息：
 
 ![](https://www.techgrow.cn/uploads/2022/02/28/8i4J9HpUUelLo43KLdHphgMHIFQwleNg.png)
 

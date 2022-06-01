@@ -15,7 +15,7 @@ module.exports = [
         link: '/wechat/hexo/'
       },
       {
-        text: 'VuePress v1.x 博客',
+        text: 'VuePress 博客',
         link: '/wechat/vuepress/'
       }
     ]
