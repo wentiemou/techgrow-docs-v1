@@ -184,12 +184,12 @@ module.exports = {
 VuePress 安装插件后，引流工具无法生效。
 :::
 
-若引流工具无法生效，此时需要留意 VuePress 使用的是不是第三方主题。一旦使用了第三方主题，则需要根据第三方主题来配置插件的 `selector` 参数，该参数的作用是指定选择器来获取文章的主体内容。其中 VuePress 不同主题的配置示例如下：
+若引流工具无法生效，此时需要留意 VuePress 使用的是不是第三方主题。一旦使用了第三方主题，则需要根据第三方主题来配置插件的 `selector` 参数，该参数的作用是指定 JS 选择器来获取文章的主体内容。其中 VuePress 不同主题的配置示例如下：
 
-| 主题                | 插件配置                                | 备注       |
-| ------------------- | --------------------------------------- | ---------- |
-| @vuepress/theme-vue | `selector: 'div.theme-default-content'` | 默认主题   |
-| vuepress-theme-reco | `selector: 'div.theme-reco-content'`    | 第三方主题 |
+| 主题                                                                                              | 插件配置                                | 备注         |
+| ------------------------------------------------------------------------------------------------- | --------------------------------------- | ------------ |
+| [@vuepress/theme-vue](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/theme-vue) | `selector: 'div.theme-default-content'` | 官方默认主题 |
+| [vuepress-theme-reco](https://github.com/vuepress-reco/vuepress-theme-reco-1.x)                   | `selector: 'div.theme-reco-content'`    | 第三方主题   |
 
 > 值得一提的是，若由于 `selector` 参数配置不正确导致引流工具无效，那么引流工具会在浏览器的控制台输出如下的警告信息
 
