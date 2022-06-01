@@ -178,6 +178,25 @@ module.exports = {
 
 > 提示：为了方便日后维护，强烈建议使用第二种方式来添加自定义样式
 
+## 常见问题
+
+::: tip 问题一
+VuePress 安装插件后，引流工具无法生效。
+:::
+
+若引流工具无法生效，此时需要留意 VuePress 使用的是不是第三方主题。一旦使用了第三方主题，则需要根据第三方主题来配置插件的 `selector` 参数，该参数用于获取文章的主体内容。
+
+| 主题                | 插件配置                                | 备注       |
+| ------------------- | --------------------------------------- | ---------- |
+| @vuepress/theme-vue | `selector: 'div.theme-default-content'` | 默认主题   |
+| vuepress-theme-reco | `selector: 'div.theme-reco-content'`    | 第三方主题 |
+
+::: tip 问题二
+VuePress 安装插件后，浏览器访问的时候输出错误信息，且引流工具无法生效
+:::
+
+浏览器访问 VuePress 博客后，按下 `F12` 快捷键调出调试工具，然后切换到 `控制台` 标签页，最后将错误信息截图并发到 [官方微信群](https://www.techgrow.cn/img/wx-group-qr-techgrow.png) 或者 `656418510@qq.com` 邮箱，建议留言备注 VuePress 与 VuePress 主题的版本。
+
 ## 在线演示
 
 - [官方 Demo](/demo/)
