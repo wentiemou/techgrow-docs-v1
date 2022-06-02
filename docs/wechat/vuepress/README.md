@@ -104,7 +104,7 @@ module.exports = {
 | [vuepress-theme-reco](https://github.com/vuepress-reco/vuepress-theme-reco-1.x)                   | `selector: 'div.theme-reco-content'`    | 第三方主题   |
 
 ::: tip 提示
-若不知道如何指定 JS 选择器，则可以打开博客的任意一篇文章，利用 Chrome 等浏览器的元素审查功能，找到文章页面中文章主体的 `div` 标签，最后定位得到 `div` 标签的 CSS 类即可（例如 `theme-default-content`），如下图所示。
+若不清楚如何指定 JS 选择器，则可以打开博客的任意一篇文章，利用 Chrome 等浏览器的元素审查功能，找到文章页面中文章主体的 `div` 标签，最后定位得到 `div` 标签的 CSS 类即可（例如 `theme-default-content`），如下图所示。
 :::
 
 ![](https://www.techgrow.cn/uploads/2022/02/28/tgG7u5vltLzQryYooEv6f4fyFlNVSp8T.png)
