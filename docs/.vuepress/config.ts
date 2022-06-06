@@ -63,6 +63,8 @@ module.exports = {
       excludes: { strExp: [], regExp: ['^(?!\/v1/demo).*'] },
       // 是否反转 URL 排除规则的配置，即只有符合排除规则的文章才会添加引流工具
       reverse: false,
+      // 文章解锁后凭证的有效天数
+      expires: 365,
       // 每篇文章随机添加引流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加引流工具
       random: 1
     }]
