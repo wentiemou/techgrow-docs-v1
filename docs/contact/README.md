@@ -1,6 +1,6 @@
 ---
-title: 联系方式
-description: 联系方式
+title: 获取帮助
+description: 获取帮助
 ---
 
 ## 获取帮助

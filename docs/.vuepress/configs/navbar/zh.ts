@@ -41,7 +41,7 @@ module.exports = [
         link: '/demo/'
       },
       {
-        text: '联系方式',
+        text: '获取帮助',
         link: '/contact/'
       },
       {
