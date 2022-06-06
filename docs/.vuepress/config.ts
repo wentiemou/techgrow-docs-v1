@@ -46,7 +46,7 @@ module.exports = {
     }],
     ['vuepress-plugin-readmore-popular', {
       // 已申请的博客 ID
-      blogId: '96641-5333172926158-056',
+      blogId: '80382-9611561604493-589',
       // 已申请的微信公众号名称
       name: '全栈技术驿站',
       // 已申请的微信公众号回复关键词
