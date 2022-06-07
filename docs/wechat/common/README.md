@@ -109,7 +109,7 @@ description: 博客引流微信公众号
 | qrcode  | 是   |        | 已申请的微信公众号二维码链接                                                                              |
 | keyword | 是   |        | 已申请的微信公众号回复关键词                                                                              |
 | expires | 否   | `365`  | 文章解锁后凭证的有效天数                                                                                  |
-| type    | 否   |        | 博客类型，包括：hexo、vuepress、hugo、gatsby、jekyll、other                                               |
+| type    | 否   |        | 博客类型，包括：hexo、vuepress、vuepress2、hugo、gatsby、jekyll、docsify、typecho、wordpress、other       |
 | random  | 否   | `1`    | 每篇文章随机添加微信公众号引流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加引流工具 |
 
 ## 第六步：验证引流工具是否整合成功
