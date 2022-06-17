@@ -74,5 +74,11 @@ module.exports = {
   extraWatchFiles: [
     '.vuepress/configs/navbar/zh.ts',
     '.vuepress/configs/sidebar/zh.ts'
-  ]
+  ],
+
+  // Markdown配置
+  markdown: {
+    lineNumbers: false
+  }
+
 }
