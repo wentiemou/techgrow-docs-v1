@@ -20,15 +20,15 @@ VuePress v2.x 博客建议安装 [vuepress-plugin-readmore-popular-next](https:/
 
 ## 注册博客
 
-浏览器访问 [TechGrow](https://open.techgrow.cn) 的官网，注册并登录账号后，进入博客的后台管理页面。首先点击左侧的菜单 `博客注册`，然后点击 `新增` 按钮，添加自己博客的信息。博客注册成功后，记录下博客 ID，后面的步骤会使用到
+浏览器访问 [TechGrow](https://open.techgrow.cn) 的官网 ，注册并登录账号后，进入博客的后台管理页面。首先点击左侧的菜单 `博客注册`，然后点击 `新增` 按钮，添加自己博客的信息。博客注册成功后，记录下 `博客 ID`，后面的步骤会使用到
 
-![](https://raw.githubusercontent.com/rqh656418510/vuepress-plugin-readmore-popular-next/main/screenshot/717e14eb59dd44dea62d6a0b7549abfd.png)
+<img :src="$withBase('/images/guide/717e14eb59dd44dea62d6a0b7549abfd.png')">
 
 ## 设置公众号
 
 在微信公众号的后台管理页面，菜单栏里选择 `自动回复` - `关键词回复`，启用 `自动回复`，然后点击 `添加回复` 按钮：
 
-![](https://raw.githubusercontent.com/rqh656418510/vuepress-plugin-readmore-popular-next/main/screenshot/em64p7w8wlqtt0rsjop0jjeywx29m25w.png)
+<img :src="$withBase('/images/guide/em64p7w8wlqtt0rsjop0jjeywx29m25w.png')">
 
 填写 `规则名称`、`关键词（当初你在 TechGrow 中设置的）`、`回复内容` 选择 `文字`，然后 `回复文字` 的内容填写获取博客解锁验证码的链接，如下所示（请自行更改 `xxxxx-xxxxxxxxx-xxx` 为你申请到的博客 ID）
 
@@ -36,7 +36,7 @@ VuePress v2.x 博客建议安装 [vuepress-plugin-readmore-popular-next](https:/
 <a href="https://open.techgrow.cn/#/readmore/captcha/generate?blogId=xxxxx-xxxxxxxxx-xxx">点击链接，获取博客解锁验证码</a>
 ```
 
-![](https://raw.githubusercontent.com/rqh656418510/vuepress-plugin-readmore-popular-next/main/screenshot/yd89wbdji196ixtwzgzamw37fbein1ia.png)
+<img :src="$withBase('/images/guide/yd89wbdji196ixtwzgzamw37fbein1ia.png')">
 
 此时，当读者关注你的微信公众号，并输入关键词后（比如我设置的关键词就是 `tech`），那么读者就会自动接收到获取博客解锁验证码的链接
 
@@ -112,17 +112,17 @@ module.exports = {
 若不清楚如何指定 JS 选择器，则可以打开博客的任意一篇文章，利用 Chrome 等浏览器的元素审查功能，找到文章页面中文章主体的 `div` 标签，最后定位得到 `div` 标签的 CSS 类即可（例如 `theme-default-content`），如下图所示。
 :::
 
-![](https://raw.githubusercontent.com/rqh656418510/vuepress-plugin-readmore-popular-next/main/screenshot/ggmr7dg23fjj3mqndyays04ok93adj3n.png)
+<img :src="$withBase('/images/guide/ggmr7dg23fjj3mqndyays04ok93adj3n.png')">
 
 ## 验证插件效果
 
 打开文章页面，若文章自动隐藏了部分内容，并且出现了 `阅读全文` 按钮，则说明引流插件正常运行，如下图所示：
 
-![](https://raw.githubusercontent.com/rqh656418510/vuepress-plugin-readmore-popular-next/main/screenshot/g7v4su56sx5g95qipmzh0k1hknj6fsa7.png)
+<img :src="$withBase('/images/guide/g7v4su56sx5g95qipmzh0k1hknj6fsa7.png')">
 
-点击 `阅读全文按钮`，会弹出微信公众号的二维码窗口，如下图所示：
+点击 `阅读全文` 按钮，会弹出微信公众号的二维码窗口，如下图所示：
 
-![](https://raw.githubusercontent.com/rqh656418510/vuepress-plugin-readmore-popular-next/main/screenshot/77o3g5fhjovtu725vm8z42lemqt8zwli.png)
+<img :src="$withBase('/images/guide/77o3g5fhjovtu725vm8z42lemqt8zwli.png')">
 
 ## 取消阅读限制
 
@@ -204,13 +204,13 @@ VuePress 安装插件后，引流工具无法生效。
 
 > 值得一提的是，若由于 `selector` 参数配置不正确导致引流工具无效，那么引流工具会在浏览器的控制台输出如下的警告信息：
 
-![](https://www.techgrow.cn/uploads/2022/02/28/8i4J9HpUUelLo43KLdHphgMHIFQwleNg.png)
+<img :src="$withBase('/images/guide/8i4J9HpUUelLo43KLdHphgMHIFQwleNg.png')">
 
 ::: tip 问题二
 VuePress 安装插件后，浏览器的控制台输出警告或者错误信息，且引流工具无法生效
 :::
 
-浏览器访问 VuePress 博客后，按下 `F12` 快捷键调出调试工具，然后切换到 `控制台`，最后将警告或者错误信息截图，并发送到 [官方微信群](https://www.techgrow.cn/img/wx-group-qr-techgrow.png) 或者 `656418510@qq.com` 邮箱，建议留言备注 VuePress 与 VuePress 主题的版本号。
+浏览器访问 VuePress 博客后，按下 `F12` 快捷键调出调试工具，然后切换到 `控制台`，最后将警告或者错误信息截图，并发送到 [官方微信群](https://www.techgrow.cn/img/wx-group-qr-techgrow.png')"> 或者 `656418510@qq.com` 邮箱，建议留言备注 VuePress 与 VuePress 主题的版本号。
 
 ::: tip 问题三
 VuePress 安装插件后，移动端的引流工具无法生效，而 PC 端却生效
