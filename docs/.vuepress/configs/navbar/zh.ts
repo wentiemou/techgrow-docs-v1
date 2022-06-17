@@ -15,8 +15,12 @@ module.exports = [
         link: '/wechat/hexo/'
       },
       {
-        text: 'VuePress 博客',
+        text: 'VuePress v1.x 博客',
         link: '/wechat/vuepress/'
+      },
+      {
+        text: 'VuePress v2.x 博客',
+        link: '/wechat/vuepress2/'
       }
     ]
   },
@@ -30,6 +34,10 @@ module.exports = [
       {
         text: 'VuePress v1.x 引流插件',
         link: 'https://github.com/rqh656418510/vuepress-plugin-readmore-popular',
+      },
+      {
+        text: 'VuePress v2.x 引流插件',
+        link: 'https://github.com/rqh656418510/vuepress-plugin-readmore-popular-next',
       }
     ]
   },
