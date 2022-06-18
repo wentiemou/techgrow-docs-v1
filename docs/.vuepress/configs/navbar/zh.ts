@@ -1,10 +1,6 @@
 module.exports = [
   {
     text: '公众号引流',
-    link: '/'
-  },
-  {
-    text: '博客平台',
     items: [
       {
         text: '主流博客',
