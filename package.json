@@ -8,12 +8,12 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
+    "@mr-hope/vuepress-plugin-copy-code": "^1.30.0",
     "@vuepress/plugin-back-to-top": "^1.9.7",
     "@vuepress/theme-vue": "^1.9.7",
     "vue-toasted": "^1.1.25",
     "vuepress": "^1.9.7",
     "vuepress-plugin-baidu-seo": "^0.0.1",
-    "vuepress-plugin-code-copy": "^1.0.6",
     "vuepress-plugin-medium-zoom": "^1.1.9",
     "vuepress-plugin-readmore-popular": "^0.0.9",
     "vuepress-plugin-sitemap": "^2.3.1"

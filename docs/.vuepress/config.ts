@@ -33,8 +33,11 @@ module.exports = {
 
   // 插件配置
   plugins: [
+    ['@mr-hope/copy-code', {
+      duration: 1000,
+      showInMobile: true
+    }],
     ['@vuepress/back-to-top', true],
-    ['vuepress-plugin-code-copy', true],
     ['vuepress-plugin-medium-zoom', true],
     ['vuepress-plugin-baidu-seo', {
       ignoreLocal: true,
