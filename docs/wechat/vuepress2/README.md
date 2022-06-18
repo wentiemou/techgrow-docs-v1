@@ -222,7 +222,7 @@ VuePress 安装插件后，引流工具无法生效。
 VuePress 安装插件后，浏览器的控制台输出警告或者错误信息，且引流工具无法生效
 :::
 
-浏览器访问 VuePress 博客后，按下 `F12` 快捷键调出调试工具，然后切换到 `控制台`，最后将警告或者错误信息截图，并发送到 [官方微信群](https://www.techgrow.cn/img/wx-group-qr-techgrow.png')"> 或者 `656418510@qq.com` 邮箱，建议留言备注 VuePress 与 VuePress 主题的版本号。
+浏览器访问 VuePress 博客后，按下 `F12` 快捷键调出调试工具，然后切换到 `控制台`，最后将警告或者错误信息截图，并发送到 [官方微信群](https://www.techgrow.cn/img/wx-group-qr-techgrow.png) 或者 `656418510@qq.com` 邮箱，建议留言备注 VuePress 与 VuePress 主题的版本号。
 
 ::: tip 问题三
 VuePress 安装插件后，移动端的引流工具无法生效，而 PC 端却生效
