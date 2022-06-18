@@ -7,10 +7,6 @@ description: VuePress v1.x 博客引流微信公众号
 
 VuePress v1.x 博客建议安装 [vuepress-plugin-readmore-popular](https://github.com/rqh656418510/vuepress-plugin-readmore-popular) 插件，将 [TechGrow](https://open.techgrow.cn) 的免费微信公众号引流工具整合到博客中，用户扫码关注微信公众号后可以解锁全站文章，让微信公众号的粉丝数躺着增长。
 
-::: tip 兼容性
-上述介绍的插件只支持 VuePress v1.x，不支持 VuePress v2.x。
-:::
-
 ## 特色功能
 
 - 支持随机为博客添加引流功能
@@ -41,6 +37,10 @@ VuePress v1.x 博客建议安装 [vuepress-plugin-readmore-popular](https://gith
 此时，当读者关注你的微信公众号，并输入关键词后（比如我设置的关键词就是 `tech`），那么读者就会自动接收到获取博客解锁验证码的链接
 
 ## 安装插件
+
+::: warning 兼容性说明
+值得一提的是，插件只支持 VuePress v1.x，不支持 VuePress v2.x。
+:::
 
 - 运行 `npm install` 命令安装插件到本地博客
 
