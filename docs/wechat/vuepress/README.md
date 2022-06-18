@@ -39,13 +39,13 @@ VuePress v1.x 博客建议安装 [vuepress-plugin-readmore-popular](https://gith
 ## 安装插件
 
 ::: warning 兼容性说明
-值得一提的是，插件只支持 VuePress v1.x，不支持 VuePress v2.x。
+`vuepress-plugin-readmore-popular` 插件只支持 VuePress v1.x，不支持 VuePress v2.x。
 :::
 
 - 运行 `npm install` 命令安装插件到本地博客
 
 ``` sh
-$ npm install -D vuepress-plugin-readmore-popular
+npm install -D vuepress-plugin-readmore-popular
 ```
 
 ## 配置 VuePress

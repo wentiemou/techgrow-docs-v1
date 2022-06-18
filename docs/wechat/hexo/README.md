@@ -42,7 +42,7 @@ Hexo 博客建议安装 [hexo-readmore](https://github.com/rqh656418510/hexo-rea
 - 运行 `npm install` 命令安装插件到本地项目
 
 ``` sh
-$ npm install hexo-readmore --save
+npm install hexo-readmore --save
 ```
 
 ## 配置 Hexo
@@ -92,19 +92,19 @@ readmore:
 - 运行 `hexo clean` 命令清理本地博客
 
 ``` sh
-$ hexo clean
+hexo clean
 ```
 
 - 运行 `hexo generate` 命令构建本地博客
 
 ``` sh
-$ hexo generate
+hexo generate
 ```
 
 - 运行 `hexo server` 命令启动本地博客服务
 
 ``` sh
-$ hexo server
+hexo server
 ```
 
 ## 验证插件效果
