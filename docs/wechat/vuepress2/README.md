@@ -7,10 +7,6 @@ description: VuePress v2.x 博客引流微信公众号
 
 VuePress v2.x 博客建议安装 [vuepress-plugin-readmore-popular-next](https://github.com/rqh656418510/vuepress-plugin-readmore-popular-next) 插件，将 [TechGrow](https://open.techgrow.cn) 的免费微信公众号引流工具整合到博客中，用户扫码关注微信公众号后可以解锁全站文章，让微信公众号的粉丝数躺着增长。
 
-::: tip 兼容性
-上述介绍的插件，只支持版本号大于等于 `v2.0.0-beta.48` 的 VuePress；若不满足要求，请务必先手动升级 VuePress 的版本。
-:::
-
 ## 特色功能
 
 - 支持随机为博客添加引流功能
@@ -42,6 +38,18 @@ VuePress v2.x 博客建议安装 [vuepress-plugin-readmore-popular-next](https:/
 
 ## 安装插件
 
+::: warning 注意事项
+- 插件只支持版本号大于等于 `v2.0.0-beta.48` 的 VuePress，若不满足要求，请务必先手动升级 VuePress 的版本
+- 以插件版本号 `2.0.0-beta.48.x` 举例，其中的 `2.0.0-beta.48` 代表该插件兼容的 VuePress 版本号，而 `x` 则代表插件自身的修订版本号。
+:::
+
+- 查看插件所有的版本信息
+
+``` sh
+# 查看版本信息
+$ npm view vuepress-plugin-readmore-popular-next versions
+```
+
 - 运行 `npm install` 命令安装插件到本地博客
 
 ``` sh
@@ -51,10 +59,6 @@ $ npm install -D vuepress-plugin-readmore-popular-next
 # 安装指定版本（推荐）
 $ npm install -D vuepress-plugin-readmore-popular-next@2.0.0-beta.48.2
 ```
-
-::: tip 提示
-以插件版本号 `2.0.0-beta.48.x` 举例，其中的 `2.0.0-beta.48` 代表该插件兼容的 VuePress 版本号，而 `x` 则代表插件自身的修订版本号。
-:::
 
 ## 配置 VuePress
 
