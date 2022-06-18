@@ -220,4 +220,4 @@ VuePress 安装插件后，移动端的引流工具无法生效，而 PC 端却�
 
 ## 在线演示
 
-- [官方 Demo](/demo/)
+<ul><li><a :href="$withBase('/demo/')">官方 Demo</a></li></ul>

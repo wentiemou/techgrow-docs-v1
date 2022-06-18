@@ -50,7 +50,7 @@ $ npm install -D vuepress-plugin-readmore-popular-next
 
 ## 配置 VuePress
 
-编辑 VuePress 的主配置文件（例如 `.vuepress/config.js`），新增插件的配置信息（请自行更改博客相关的信息），如下所示：
+编辑 VuePress 的主配置文件（例如 `.vuepress/config.ts`），新增插件的配置信息（请自行更改博客相关的信息），如下所示：
 
 ``` js
 const { readmorePlugin } = require('vuepress-plugin-readmore-popular-next')
@@ -220,4 +220,4 @@ VuePress 安装插件后，移动端的引流工具无法生效，而 PC 端却�
 
 ## 在线演示
 
-- [官方 Demo](/demo/)
+<ul><li><a :href="$withBase('/demo/')">官方 Demo</a></li></ul>
