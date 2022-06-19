@@ -2,15 +2,21 @@ module.exports = {
 
   // 基础配置
   base: '/v1/',
-  lang: 'zh-CN',
-  title: 'TechGrow 开放平台',
-  description: '专注于自媒体引流的免费开放平台，支持公众号、百家号、头条号、抖音号等自媒体平台的引流。',
   head: [
     ['meta', { name: 'application-name', content: 'TechGrow 开放平台' }],
     ['meta', { name: 'apple-mobile-web-app-title', content: 'TechGrow 开放平台' }],
     ['link', { rel: 'icon', href: 'favicon.ico' }]
   ],
 
+  // 多语言配置
+  locales: {
+    '/': {
+      lang: 'zh-CN',
+      title: 'TechGrow 开放平台',
+      description: '专注于自媒体引流的免费开放平台，支持公众号、百家号、头条号、抖音号等自媒体平台的引流。',
+    }
+  },
+  
   // 主题配置
   theme: '@vuepress/vue',
   themeConfig: {
