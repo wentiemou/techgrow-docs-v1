@@ -762,10 +762,3 @@ int main(int argc, char **argv) {
     return RUN_ALL_TESTS();
 }
 ```
-
-## 参考博客
-
-- [建立简单的带单元测试的 CMake 项目](https://www.dazhuanlan.com/zhangxiaofan/topics/1169035)
-- [CMake + GoogleTest 之一入门](https://blog.csdn.net/joelcat/article/details/90766192)
-- [CMake 使用 GoogleTest 进行单元测试](https://blog.csdn.net/yangxuan0261/article/details/104358123)
-- [Centos7 C++ 安装使用 GoogleTest 进行单元测试](https://blog.csdn.net/weixin_43778179/article/details/104943810)
