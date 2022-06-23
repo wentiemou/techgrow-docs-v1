@@ -5,7 +5,7 @@ module.exports = {
   head: [
     ['meta', { name: 'application-name', content: 'TechGrow 开放平台' }],
     ['meta', { name: 'apple-mobile-web-app-title', content: 'TechGrow 开放平台' }],
-    ['link', { rel: 'icon', href: 'favicon.ico' }]
+    ['link', { rel: 'icon', type: 'image/png', sizes: '30x30', href: `/images/icons/favicon-30x30.png` }]
   ],
 
   // 多语言配置
