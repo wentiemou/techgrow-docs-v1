@@ -39,7 +39,7 @@ Hexo 博客建议安装 [hexo-readmore](https://github.com/rqh656418510/hexo-rea
 
 ## 安装插件
 
-- 运行 `npm install` 命令安装插件到本地项目
+- 运行 `npm install` 命令安装插件
 
 ``` sh
 npm install hexo-readmore --save
