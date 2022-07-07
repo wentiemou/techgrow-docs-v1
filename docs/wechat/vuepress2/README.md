@@ -121,7 +121,6 @@ module.exports = {
 | 主题                                                                                              | 插件配置                                | 备注         |
 | ------------------------------------------------------------------------------------------------- | --------------------------------------- | ------------ |
 | [@vuepress/theme-vue](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/theme-vue) | `selector: 'div.theme-default-content'` | 官方默认主题 |
-| [vuepress-theme-reco](https://github.com/vuepress-reco/vuepress-theme-reco-1.x)                   | `selector: 'div.theme-reco-content'`    | 第三方主题   |
 | [vuepress-theme-hope](https://github.com/vuepress-theme-hope/vuepress-theme-hope)                 | `selector: 'div.theme-hope-content'`    | 第三方主题   |
 
 ::: tip 提示
