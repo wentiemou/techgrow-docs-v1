@@ -44,13 +44,14 @@ description: 博客引流微信公众号
 
 ### 第三步：定位文章主体的标签元素
 
-在博客的 `themes` 目录下，找到你正在使用的主题目录，比如：`next` 等，具体根据你选择的主题来判断。进入 NexT 主题的 `layout` 目录，找到 `_macro/post.njk` 模板文件，若这里有一大段与文章主体内容相关的 HTML 代码，那就说明文章的模板定义就在这里，示例模板代码如下：
+在 Hexo 博客的 `themes` 目录下，找到你正在使用的主题目录，比如：`next` 等，具体根据你选择的主题来判断。进入主题源码的 `layout` 目录，找到 `_macro/post.njk` 模板文件，若这里有一大段与文章主体内容相关的 HTML 代码，那就说明文章主体标签元素的模板定义就在这里，示例模板代码如下：
 
 ``` js
 <div class="post-block">
   {# Gallery support #}
   {{ post_gallery(post.photos) }}
 
+  <!-- 文章主体的标签元素 -->
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="{{ post.lang }}">
     <link itemprop="mainEntityOfPage" href="{{ post.permalink }}">
 
@@ -66,13 +67,13 @@ description: 博客引流微信公众号
 </div>
 ```
 
-另一种定位方式是打开你博客的任意一篇文章，利用 Chrome 等浏览器的元素审查功能，找到文章页面中文章主体的标签元素，比如下图中的 `article` 就是整篇文章的主体标签元素：
+另一种定位方式是打开你博客的任意一篇文章，利用 Chrome 等浏览器的元素审查功能，找到文章页面中文章主体的标签元素，比如下图中的 `article` 就是文章主体的标签元素：
 
 <img :src="$withBase('/images/guide/5562a8e4868843e0868a4bdfd67c530e.png')">
 
 ### 第四步：新增文章内容 DIV 标签
 
-在文章模板文件中找到文章主体的标签元素之后，在其上一层包一层 `div` 标签，并将 `div` 标签的 `id` 属性设置为 `readmore-container`，即添加的 HTML 标签为 `<div id="readmore-container">`，示例模板代码如下：
+在文章模板文件中找到文章主体的标签元素之后，在其上面包一层 `div` 标签，并将 `div` 标签的 `id` 属性值设置为 `readmore-container`，即添加的完整 HTML 标签为 `<div id="readmore-container">`，示例模板代码如下：
 
 ``` html
 <div class="post-block">
@@ -99,7 +100,7 @@ description: 博客引流微信公众号
 
 ### 第五步：新增引流工具的 HTML 代码
 
-打开 TechGrow 的[博客后台管理页面](https://open.techgrow.cn/#/readmore/website/register)，点击博客列表中右侧的 `使用` 链接，将窗口里的 HTML 代码复制到第三步中找到的文章模板文件的末尾，也可以添加到主题的 `footer` 模板文件中，示例 HTML 代码如下图所示：
+打开 TechGrow 的[博客后台管理页面](https://open.techgrow.cn/#/readmore/website/register)，点击博客列表中右侧的 `使用` 链接，将窗口里的 HTML 代码复制到第三步中找到的文章模板文件的末尾，也可以统一添加到主题的 `footer` 模板文件中，示例 HTML 代码如下图所示：
 
 <img :src="$withBase('/images/guide/ad963a38752743169e8f351983cc6cc1.png')">
 
