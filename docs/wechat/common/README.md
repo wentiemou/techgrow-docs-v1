@@ -126,7 +126,7 @@ description: 博客引流微信公众号
 <img :src="$withBase('/images/guide/202980a480fd463c814a31d5cc3fb2a1.png')">
 
 ::: tip 使用总结
-博客整合引流工具，其本质就是先在博客的主题源码里，找到文章的主体内容，然后在其外面包裹一层 DIV 标签（`<div id="readmore-container">`），最后再将引流工具的 HTML 代码添加到博客文章的末尾即可。
+博客整合引流工具，其本质原理就是先在博客的主题源码里，找到文章的主体内容，然后在其外面包裹一层 DIV 标签（`<div id="readmore-container">`），最后再将引流工具的 HTML 代码添加到博客文章的末尾即可。
 :::
 
 ## 自定义样式
@@ -149,3 +149,7 @@ description: 博客引流微信公众号
 :::
 
 考虑到用户体验的问题，在移动端默认是关闭引流功能的，请知悉。
+
+## 在线演示
+
+- [官方博客](https://www.techgrow.cn/posts/52f22f9b.html)
