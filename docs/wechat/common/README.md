@@ -135,7 +135,7 @@ description: 博客引流微信公众号
 引流工具默认使用了定义在 [readmore.css](https://qiniu.techgrow.cn/readmore/dist/readmore.css) 的 CSS 样式，你可以使用以下两种方式自定义自己的样式：
 
 - 第一种方式：更改博客主题的 CSS 源码文件，将自定义的那部分 CSS 样式添加到里面
-- 第二种方式：根据 [readmore.css](https://qiniu.techgrow.cn/readmore/dist/readmore.css) 创建自己的 CSS 文件（完整的），并将其存放在自己的博客里，同时通过插件的 `cssUrl` 配置参数来指定其访问的 URL 路径
+- 第二种方式：根据 [readmore.css](https://qiniu.techgrow.cn/readmore/dist/readmore.css) 创建自己的 CSS 文件（完整的），并将其存放在自己的博客里，同时通过引流工具的 `cssUrl` 配置参数来指定其访问的 URL 路径
 
 ## 常见问题
 
