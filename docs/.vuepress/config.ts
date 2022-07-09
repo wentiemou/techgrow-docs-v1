@@ -24,12 +24,12 @@ module.exports = {
     smoothScroll: true,
     displayAllHeaders: false,
     editLinks: true,
+    lastUpdated: '上次更新',
     docsDir: 'docs',
     docsBranch: 'main',
     repo: 'rqh656418510/techgrow-docs-v1',
     locales: {
       '/': {
-        lastUpdatedText: '上次更新',
         editLinkText: '在 GitHub 上编辑此页',
         nav: require('./configs/navbar/zh.ts'),
         sidebar: require('./configs/sidebar/zh.ts')
