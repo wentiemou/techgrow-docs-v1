@@ -60,7 +60,7 @@ module.exports = {
       name: '全栈技术驿站',
       // 已申请的微信公众号回复关键词
       keyword: 'Tech',
-      // 已申请的微信公众号二维码链接
+      // 已申请的微信公众号二维码图片
       qrcode: 'https://www.techgrow.cn/img/wx_mp_qr.png',
       // 文章内容的 JS 选择器，若使用的不是官方默认主题，则需要根据第三方的主题来设置
       selector: 'div.theme-default-content',
