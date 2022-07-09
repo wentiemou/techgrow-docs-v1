@@ -135,13 +135,6 @@ updated: 2022-01-12 22:25:49
 ---
 ```
 
-## 自定义样式
-
-插件默认使用了定义在 [hexo.css](https://qiniu.techgrow.cn/readmore/dist/hexo.css) 的 CSS 样式，你可以使用以下两种方式自定义自己的样式：
-
-- 第一种方式：更改博客主题的 CSS 源码文件，将自定义的那部分 CSS 样式添加到里面
-- 第二种方式：根据 [hexo.css](https://qiniu.techgrow.cn/readmore/dist/hexo.css) 创建自己的 CSS 文件（完整的），并将其存放在自己的博客里，同时通过插件的 `cssUrl` 配置参数来指定其访问的 URL 路径
-
 ## 已兼容的主题
 
 - [NexT](https://github.com/next-theme/hexo-theme-next)
@@ -150,6 +143,27 @@ updated: 2022-01-12 22:25:49
 - [Matery](https://github.com/blinkfox/hexo-theme-matery)
 - [Fluid](https://github.com/fluid-dev/hexo-theme-fluid)
 - [Stun](https://github.com/liuyib/hexo-theme-stun)
+
+## 自定义样式
+
+插件默认使用了定义在 [hexo.css](https://qiniu.techgrow.cn/readmore/dist/hexo.css) 的 CSS 样式，你可以使用以下两种方式自定义自己的样式：
+
+- 第一种方式：更改博客主题的 CSS 源码文件，将自定义的那部分 CSS 样式添加到里面
+- 第二种方式：根据 [hexo.css](https://qiniu.techgrow.cn/readmore/dist/hexo.css) 创建自己的 CSS 文件（完整的），并将其存放在自己的博客里，同时通过插件的 `cssUrl` 配置参数来指定其访问的 URL 路径
+
+## 常见问题
+
+::: tip 问题一
+Hexo 安装插件后，浏览器的控制台输出警告或者错误信息，且引流工具无法生效
+:::
+
+浏览器访问 Hexo 博客后，按下 `F12` 快捷键调出调试工具，然后切换到 `控制台`，最后将警告或者错误信息截图，并发送到 [官方微信群](https://www.techgrow.cn/img/wx-group-qr-techgrow.png) 或者 `656418510@qq.com` 邮箱，建议留言备注 Hexo 与 Hexo 主题的版本号。
+
+::: tip 问题二
+Hexo 安装插件后，移动端的引流工具无法生效，而 PC 端却生效
+:::
+
+考虑到用户体验的问题，在移动端默认是关闭引流功能的，请知悉。
 
 ## 在线演示
 
