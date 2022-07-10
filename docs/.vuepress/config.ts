@@ -16,7 +16,7 @@ module.exports = {
       description: '专注于自媒体引流的免费开放平台，支持公众号、百家号、头条号、抖音号等自媒体平台的引流。',
     }
   },
-  
+
   // 主题配置
   theme: '@vuepress/vue',
   themeConfig: {
@@ -72,6 +72,8 @@ module.exports = {
       excludes: { strExp: [], regExp: ['^(?!\/v1/demo).*'] },
       // 是否反转 URL 排除规则的配置，即只有符合排除规则的文章才会添加引流工具
       reverse: false,
+      // 文章内容的预览高度
+      height: 'auto',
       // 文章解锁后凭证的有效天数
       expires: 365,
       // 定时校验凭证有效性的时间间隔（秒）
