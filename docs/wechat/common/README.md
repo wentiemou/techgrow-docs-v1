@@ -111,6 +111,7 @@ description: 博客引流微信公众号
 | name     | 是   |         | 已申请的微信公众号名称                                                                                                  |
 | qrcode   | 是   |         | 已申请的微信公众号二维码图片                                                                                            |
 | keyword  | 是   |         | 已申请的微信公众号回复关键词                                                                                            |
+| height   | 否   | `auto`  | 文章内容的预览高度                                                                                                      |
 | expires  | 否   | `365`   | 文章解锁后凭证的有效天数                                                                                                |
 | interval | 否   | `60`    | 定时校验凭证有效性的时间间隔（秒）                                                                                      |
 | type     | 否   | `other` | 博客类型，包括：`hexo`、`vuepress`、`vuepress2`、`hugo`、`gatsby`、`jekyll`、`docsify`、`typecho`、`wordpress`、`other` |
