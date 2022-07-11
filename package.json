@@ -15,7 +15,7 @@
     "vuepress": "^1.9.7",
     "vuepress-plugin-baidu-seo": "^0.0.3",
     "vuepress-plugin-medium-zoom": "^1.1.9",
-    "vuepress-plugin-readmore-popular": "^0.0.12",
+    "vuepress-plugin-readmore-popular": "^0.0.14",
     "vuepress-plugin-sitemap": "^2.3.1"
   }
 }
