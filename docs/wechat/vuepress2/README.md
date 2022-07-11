@@ -127,10 +127,8 @@ module.exports = {
 | [vuepress-theme-hope](https://github.com/vuepress-theme-hope/vuepress-theme-hope)                 | `selector: 'div.theme-hope-content'`    | 第三方主题   |
 
 ::: tip 提示
-若不清楚如何指定 JS 选择器，则可以打开博客的任意一篇文章，利用 Chrome 等浏览器的元素审查功能，找到文章页面中文章主体的 `div` 标签，最后定位得到 `div` 标签的 CSS 类即可（例如 `theme-default-content`），如下图所示。
+若不清楚如何指定 JS 选择器，则可以打开博客的任意一篇文章，利用 Chrome 等浏览器的元素审查功能，找到文章页面中文章主体的 `div` 标签，最后定位得到 `div` 标签的 CSS 类即可（例如 `theme-default-content`），<a :href="$withBase('/images/guide/ggmr7dg23fjj3mqndyays04ok93adj3n.png')" target="_blank">点击查看</a>详细的操作图解。
 :::
-
-<img :src="$withBase('/images/guide/ggmr7dg23fjj3mqndyays04ok93adj3n.png')">
 
 ## 验证插件效果
 
