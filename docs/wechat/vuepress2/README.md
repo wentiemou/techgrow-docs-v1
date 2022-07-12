@@ -198,9 +198,11 @@ module.exports = {
 }
 ```
 
+::: tip 提示
 - 文章 URL 优先匹配 `strExp` 规则，然后再匹配 `regExp` 规则
 - 文章 URL 一旦满足 `strExp` 规则，则不会再匹配 `regExp` 规则
 - 如果希望符合 URL 排除规则的文章才添加引流工具，则可以使用 `reverse : true` 配置参数实现
+:::
 
 ## 自定义样式
 
