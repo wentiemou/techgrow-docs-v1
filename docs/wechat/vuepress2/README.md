@@ -41,7 +41,7 @@ VuePress v2.x 博客建议安装 [vuepress-plugin-readmore-popular-next](https:/
 
 ::: warning 兼容性说明
 - 插件兼容版本号大于等于 `v2.0.0-beta.48` 的 VuePress，若不满足要求，建议先手动升级 VuePress 的版本，否则插件可能无法生效。
-- 以插件版本号 `2.0.0-beta.48.x` 举例，其中的 `2.0.0-beta.48` 代表该插件兼容的 VuePress 版本号，而 `x` 则代表插件自身的修订版本号。
+- 以插件版本号 `2.0.0-beta.48.x` 举例，其中的 `2.0.0-beta.48` 代表该插件所兼容 VuePress 的最小版本号，而 `x` 则代表插件自身的修订版本号。
 :::
 
 - 查看插件所有的版本信息
