@@ -147,6 +147,7 @@ updated: 2022-01-12 22:25:49
 - [Matery](https://github.com/blinkfox/hexo-theme-matery)
 - [Fluid](https://github.com/fluid-dev/hexo-theme-fluid)
 - [Stun](https://github.com/liuyib/hexo-theme-stun)
+- [Butterfly](https://github.com/jerryc127/hexo-theme-butterfly)
 
 ## 自定义样式
 
